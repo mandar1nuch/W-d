@@ -9,14 +9,24 @@
             list-style-type: none;
         }
 
-        ul li:nth-child(odd) {
-            background-color: #E0E0E0; /* Сірий фон для непарних рядків */
-            color: #000000; /* Чорний колір тексту */
+        ul li {
+            background-color: #808080; /* Gray background for list items */
+            color: #FFFFFF; /* White text color for contrast */
+            padding: 5px; /* Add padding for spacing */
         }
 
         ul li:nth-child(even) {
-            background-color: #FFFFFF; /* Білий фон для парних рядків */
-            color: #000000; /* Чорний колір тексту */
+            background-color: #FFFFFF; /* White background for even-numbered items */
+            color: #000000; /* Black text color */
+        }
+
+        ul ul {
+            background-color: #808080; /* Gray background for child unordered lists */
+        }
+
+        .special-list {
+            background-color: #FFFFFF; /* White background for "Молочні продукти" and "Фрукти" */
+            color: #000000; /* Black text color for visibility */
         }
 
         ol {
@@ -45,7 +55,7 @@
     <section>
         <h2>Мій типовий список покупок</h2>
         <ul>
-            <li>Молочні продукти:
+            <li class="special-list">Молочні продукти:
                 <ul>
                     <li>Молоко</li>
                     <li>Сметана</li>
@@ -59,7 +69,7 @@
                     <li>Картопля</li>
                 </ul>
             </li>
-            <li>Фрукти:
+            <li class="special-list">Фрукти:
                 <ul>
                     <li>Яблука</li>
                     <li>Банани</li>
