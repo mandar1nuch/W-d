@@ -5,21 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сьогодення Рибчука Андрія</title>
     <style>
-
         ul {
             list-style-type: none;
         }
 
-        ul li:nth-child(odd) {
+        ul > li {
             background-color: #E0E0E0;
             color: #000000;
+            padding: 5px;
         }
 
-        ul li:nth-child(even) {
+        ul ul li:nth-child(odd) {
+            background-color: #E0E0E0;
+        }
+
+        ul ul li:nth-child(even) {
+            background-color: #FFFFFF;
+        }
+
+        .special-list {
             background-color: #FFFFFF;
             color: #000000;
+            padding: 5px;
         }
-
 
         ol {
             list-style-type: decimal;
@@ -35,6 +43,19 @@
         ol li:nth-child(4) {
             background-color: #FFFF00;
         }
+
+        h1 {
+            text-align: center;
+            font-size: 22px;
+        }
+
+        p a {
+            font-style: italic;
+        }
+
+        h2 {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -47,21 +68,21 @@
     <section>
         <h2>Мій типовий список покупок</h2>
         <ul>
-            <li>Молочні продукти:
+            <li class="special-list">Молочні продукти:
                 <ul>
                     <li>Молоко</li>
                     <li>Сметана</li>
                     <li>Масло</li>
                 </ul>
             </li>
-            <li>Овочі:
+            <li class="special-list">Овочі:
                 <ul>
                     <li>Помідори</li>
                     <li>Огірки</li>
                     <li>Картопля</li>
                 </ul>
             </li>
-            <li>Фрукти:
+            <li class="special-list">Фрукти:
                 <ul>
                     <li>Яблука</li>
                     <li>Банани</li>
