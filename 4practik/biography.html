@@ -1,108 +1,121 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Автобіографія Рибчука Андрія Вікторовича</title>
-    <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Автобіографія Рибчука Андрія Вікторовича</title>
+  <style>
+    body {
+      font-size: 100%;
+    }
 
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #36d247;
-            color: #FFFFFF;
-            border: 2px solid rgba(54, 210, 71, 0);
-            border-radius: 5px;
-            text-align: center;
-            text-decoration: none;
-            cursor: pointer;
-            margin-left: 25px; /* Збільшити дистанцію між кнопками, крім першої */
-        }
+    h1 {
+      text-align: center;
+      font-size: 22px;
+    }
 
-        .button:first-child {
-            margin-left: 0; /* Першій кнопці не потрібен відступ зліва */
-        }
+    a {
+      text-decoration: none;
+    }
 
-        .button:hover {
-            background-color: rgba(0, 255, 239, 0.80);
-            color: #000000;
-        }
+    p a {
+      font-style: italic;
+    }
 
-        .button:active {
-            background-color: #FFFF00;
-        }
+    #content {
+      text-align: center;
+    }
 
-        .section-text {
-            padding: 10px;
-        }
+    h2 {
+      font-size: 144%;
+    }
 
-        .section-text:nth-child(odd) {
-            background-color: #E0E0E0;
-            color: #000000;
-        }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #36d247;
+      color: #FFFFFF;
+      border: 2px solid rgba(54, 210, 71, 0);
+      border-radius: 5px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      margin-left: 25px;
+      font-size: 120%;
+    }
 
-        .section-text:nth-child(even) {
-            background-color: #F0F0F0;
-            color: #000000;
-        }
+    .section-text:nth-of-type(odd) {
+      background-color: #CCCCCC; /* Перший колір фону */
+      color: #000000; /* Чорний текст */
+    }
 
+    .section-text:nth-of-type(even) {
+      background-color: #FFA500; /* Інший колір фону */
+      color: #FFFFFF; /* Білий текст */
+    }
 
+    p strong {
+      font-weight: bold;
+    }
 
-    </style>
+    footer a {
+      text-transform: uppercase;
+    }
+  </style>
 </head>
 <body>
 <header>
-    <h1 id="top"> Автобіографія Рибчука Андрія Вікторовича</h1>
-    <p><a href="index.html">Назад на головну</a></p>
+  <h1 id="top">Автобіографія Рибчука Андрія Вікторовича</h1>
+  <p><a href="index.html">Назад на головну</a></p>
 </header>
 
 <main>
-    <section>
-        <h3 id="content">Зміст</h3>
-        <ul>
-            <li><a class="button" href="#basic_info">Базова інформація</a></li>
-            <li><a class="button" href="#childhood">Дитинство</a></li>
-            <li><a class="button" href="#school_years">Шкільні роки</a></li>
-            <li><a class="button" href="#extracurricular">Поза школою</a></li>
-            <li><a class="button" href="#university">Університет</a></li>
-        </ul>
-    </section>
+  <section>
+    <h3 id="content">Зміст</h3>
+    <ul>
+      <li><a class="button" href="#basic_info">Базова інформація</a></li>
+      <li><a class="button" href="#childhood">Дитинство</a></li>
+      <li><a class="button" href="#school_years">Шкільні роки</a></li>
+      <li><a class="button" href="#extracurricular">Поза школою</a></li>
+      <li><a class="button" href="#university">Університет</a></li>
+    </ul>
+  </section>
 
-    <article>
-        <h2 id="basic_info">Базова інформація</h2>
-        <div class="section-text">Мене звати Андрій, і я народився в Бурштині. З дитинства мене цікавило (шось цікаве), і це вплинуло на моє подальше життя. У моїй родині завжди було важливо (шось потім буде).</div>
-        <p><a href="#content">До змісту</a></p>
-    </article>
+  <article>
+    <h2 id="basic_info">Базова інформація</h2>
+    <div class="section-text">Мене звати Андрій, і я народився в Бурштині. З дитинства мене цікавило (шось цікаве), і це вплинуло на моє подальше життя. У моїй родині завжди було важливо (шось потім буде).</div>
+    <p><a href="#content"><strong>До змісту</strong></a></p>
+  </article>
 
-    <article>
-        <h2 id="childhood">Дитинство</h2>
-        <div class="section-text">Моє дитинство було наповнене (чимось гарним). Я навчився (чомусь важливому), що стало корисним у моєму житті. Були свої .</div>
-        <p><a href="#content">До змісту</a></p>
-    </article>
+  <article>
+    <h2 id="childhood">Дитинство</h2>
+    <div class="section-text">Моє дитинство було наповнене (чимось гарним). Я навчився (чомусь важливому), що стало корисним у моєму житті. Були свої .</div>
+    <p><a href="#content"><strong>До змісту</strong></a></p>
+  </article>
 
-    <article>
-        <h2 id="school_years">Шкільні роки</h2>
-        <div class="section-text">Під час шкільних років я навчився (чомусь), і відкрив для себе (Щось). Мої вчителі завжди підтримували мої зусилля, і це надихнуло мене на (додумаю).</div>
-        <p><a href="#content">До змісту</a></p>
-    </article>
+  <article>
+    <h2 id="school_years">Шкільні роки</h2>
+    <div class="section-text">Під час шкільних років я навчився (чомусь), і відкрив для себе (Щось). Мої вчителі завжди підтримували мої зусилля, і це надихнуло мене на (додумаю).</div>
+    <p><a href="#content"><strong>До змісту</strong></a></p>
+  </article>
 
-    <article>
-        <h2 id="extracurricular">Поза школою</h2>
-        <div class="section-text">Поза школою я займався (допишу). Це було моєю можливістю виявити себе і розвинутися у різних напрямках. Ці досвіди допомогли мені (кимось стати).</div>
-        <p><a href="#content">До змісту</a></p>
-    </article>
+  <article>
+    <h2 id="extracurricular">Поза школою</h2>
+    <div class="section-text">Поза школою я займався (допишу). Це було моєю можливістю виявити себе і розвинутися у різних напрямках. Ці досвіди допомогли мені (кимось стати).</div>
+    <p><a href="#content"><strong>До змісту</strong></a></p>
+  </article>
 
-    <article>
-        <h2 id="university">Університет</h2>
-        <div class="section-text">Шось тай буде</div>
-        <p><a href="#content">До змісту</a></p>
-    </article>
+  <article>
+    <h2 id="university">Університет</h2>
+    <div class="section-text">Шось тай буде</div>
+    <p><a href="#content"><strong>До змісту</strong></a></p>
+  </article>
 </main>
 
 <hr>
 
 <footer>
-    <p><a href="#top">Уверх</a></p>
+  <p><a href="#top">Уверх</a></p>
 </footer>
 </body>
 </html>
