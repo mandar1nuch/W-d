@@ -1,0 +1,45 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 20px;
+    text-align: center;
+}
+
+a {
+    font-style: italic;
+}
+
+section h2 {
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.image-container div {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+@media (min-width: 992px) {
+    .image-container {
+        flex-wrap: nowrap;
+    }
+
+    img {
+        width: 30%;
+        margin: 10px;
+    }
+}

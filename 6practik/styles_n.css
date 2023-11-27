@@ -1,0 +1,72 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #F0F0F0;
+    padding: 10px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 22px;
+}
+
+header p a {
+    font-style: italic;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+ul, ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul > li, ol > li {
+    background-color: #E0E0E0;
+    color: #000000;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+ul ul li:nth-child(odd), ol ol li:nth-child(odd) {
+    background-color: #E0E0E0;
+}
+
+ul ul li:nth-child(even), ol ol li:nth-child(even) {
+    background-color: #FFFFFF;
+}
+
+.special-list {
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 5px;
+}
+
+ol li:nth-child(3):hover,
+ol li:nth-child(5):hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #FF00FF;
+}
+
+ol li:nth-child(4) {
+    background-color: #FFFF00;
+}
+
+h2 {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
